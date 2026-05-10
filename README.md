@@ -31,20 +31,17 @@ Bu depo, insan genomundaki *missense* (yanlış anlamlı) varyantların hastalı
 ├── PAH.csv / CTFR.csv            # gnomAD veri zenginleştirme dosyaları
 └── README.md                     # Proje dokümantasyonu
 ## ⚙️ Kurulum ve Çalıştırma
-
+```
 ### Gereksinimler
 Projenin sorunsuz çalışması için **Python 3.8+** sürümü önerilir. Gerekli kütüphaneleri aşağıdaki komutla yükleyebilirsiniz:
 
 ```bash
 pip install pandas numpy scikit-learn tensorflow matplotlib seaborn requests pyfaidx
-
-Çalıştırma Adımları
+```
+## Çalıştırma Adımları
 Depoyu bilgisayarınıza klonlayın.
-
 hg38.fa (Referans Genom) ve clinvar.vcf.gz dosyalarının ana dizinde olduğundan emin olun.
-
 Jupyter Notebook dosyasını (veri_ve_model_kodlari.ipynb) açın.
-
 Hücreleri sırasıyla çalıştırarak API veri çekimi, model eğitimi ve görselleştirme adımlarını (Karmaşıklık matrisleri, eşik grafikleri) baştan sona simüle edebilirsiniz.
 
 Not: NCBI ve MyVariant API'lerine yapılan toplu istekler (request) zaman alabilir. Notebook içerisinde sunucuyu yormamak adına .sleep() fonksiyonları eklenmiştir.
